@@ -1,7 +1,7 @@
 let config ={};
 
 config.browser = "chrome";
-config.version = 100;
+config.version = "v1.0";
 config.timeout = 3000;
 config.testname = "Login Test";
 
