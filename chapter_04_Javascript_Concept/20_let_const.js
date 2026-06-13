@@ -1,7 +1,8 @@
 console.log(c);
-console.log("Hi");
-console.log("Hi");
-console.log("Hi");
-console.log("Hi"); 
+console.log("Hei");
+console.log("Hei");
+console.log("Hei");
+console.log("Hei");
+console.log("Hei");
 
 const c = "Vimal";
