@@ -1,7 +1,5 @@
-function retry(testName, maxRetries = 3, delay = 1000) {
-    console.log(`Retrying ${testName} up to ${maxRetries} times, ${delay}ms apart`);
+function runTest(name, status, duration) {
+    return `${name}: ${status} (${duration}ms)`;
 }
-
-
-retry("Login Test");
-retry("Registeration Test", 5, 2000);
+const r = runTest("Login", "pass", 320); // Login: pass (320ms)
+console.log(r); // Login: pass (320ms)
