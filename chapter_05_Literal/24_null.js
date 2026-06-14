@@ -1,5 +1,6 @@
 let no_audi_pramod_sir_has = null;
-let vimal_hs_teo_wives;
+let pramod_has_two_wives;
+
 let age = 0;
 
 let audi = "";

@@ -4,5 +4,14 @@ let zero = 0;
 
 let h = 0xFF;
 console.log(typeof h);
+
 let color_hex = 0xFF0000;
 console.log(typeof color_hex);
+
+let octal = 0o77; //base
+console.log(typeof octal);
+
+let million = 1e6;
+let tiny = 1.5e-4;
+console.log(typeof million);
+console.log(typeof tiny);
