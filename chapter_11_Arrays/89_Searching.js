@@ -1,19 +1,29 @@
-let results = ["pass", "fail", "pass", "pass", "fail"];
+let results = ["pass", "fail", "pass", "error", "fail"];
 
-results.indexOf("fail"); // returns the index of the first occurrence of "fail"
-results.lastIndexOf("fail"); // returns the index of the last occurrence of "fail"         
+//// indexOf — returns first index, or -1 if not found
+results.indexOf("fail");  //1
+results.indexOf("skip");  // -1
 
-results.includes("pass"); // returns true if "pass" is found in the array, otherwise false
-results.includes("unknown"); // returns false as "unknown" is not found in the array
+// lastIndexOf — searches from the end
+results.lastIndexOf("fail");    // 4
 
-let numbers = [10,25,30,45,50];
-let r = numbers.find(num => num > 25); // returns the first number greater than 25, which is 30
-console.log(r);
-let index = numbers.findIndex(num => num > 25); // returns the index of the first number greater than 25, which is 2
-console.log(index);
 
-let last = numbers.findLast(n=> n > 25); // returns the last number greater than 25, which is 50
-console.log(last);
+// includes — returns boolean
+results.includes("error"); // true
+results.includes("skip");  // false
 
-let lastIndex = numbers.findLastIndex(n=> n > 25); // returns the index of the last number greater than 25, which is 4
-console.log(lastIndex);
+
+// find — returns first matching element
+let nums = [10, 25, 30, 45];
+let r = nums.find(x => x > 20);
+console.log(r); // 25
+
+// findIndex
+nums.findIndex(n => n > 20); // 1, 2, 3
+console.log(nums.findIndex(n => n > 20));
+
+nums.findLast(n => n > 20); // 45
+console.log(nums.findLast(n => n > 20));
+
+nums.findLastIndex(n => n > 20);// 3
+console.log(nums.findLastIndex(n => n > 20));

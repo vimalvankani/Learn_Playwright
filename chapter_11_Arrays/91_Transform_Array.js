@@ -1,25 +1,20 @@
-let scores = [45,56,85,96,87,38];
+let scores = [45, 82, 91, 60, 73];
 
- //map - transform each element of the array and return a new array
-
- let grades = scores.map(s=> s>70 ? "pass" : "fail");
- console.log(grades);
-
-
- //filter - filter the elements of the array based on a condition and return a new array
-
- let passing = scores.filter(s=> s>70);
- console.log(passing);  
+// map - transform every element, return a new arrays
+// A map will always return the same number of elements that you have, 
+// but based on the condition, their values will be changed. 
+let grades = scores.map(s => s > 70 ? "Pass" : "Fail");
+console.log(grades);
 
 
- //reduce - reduce the array to a single value based on a condition
+// filter — keeps elements that pass a test
+let passing = scores.filter(s => s > 70);
+console.log(passing);
 
- let total = scores.reduce((a, b) => a + b, 0);
- console.log(total);
+// reduce , // reduce — accumulates to a single value
+let total = scores.reduce((a, b) => a + b, 0);
+console.log(total);
 
- //flat - flatten a nested array   
-let nestedArr = [[1,2], [3,4], [5,6]];
-console.log(nestedArr);
-
-let flatArr = nestedArr.flat();
-console.log(flatArr);
+// flat — flattens nested arrays
+let nested = [[1, 2], [3, 4], [5]];
+console.log(nested.flat());

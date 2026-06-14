@@ -1,27 +1,18 @@
-let browser = ["chrome", "firefox", "edge", "safari", "opera"];
-console.log(browser.length);
-console.log(browser);
+let browser = ['chrome', 'firefox', 'safari', 'opera', 'edge'];
+console.log(browser.length); // 5
+console.log(browser); // ['chrome', 'firefox', 'safari', 'opera', 'edge']
 
 browser.pop(); // remove last element
-console.log(browser);
+console.log(browser); // ['chrome', 'firefox', 'safari', 'opera']
 
-browser.push("opera"); // add element at the end of the array       
-console.log(browser);
+let removed = browser.shift();
+console.log(browser); // ['firefox', 'safari', 'opera']
+console.log(removed); // 'chrome'
 
-browser.shift(); // remove first element
-console.log(browser);
 
-browser.push("opera"); // add element at the end of the array       
-console.log(browser);
-
-let removedElement = browser.shift(); // remove first element and store it in a variable
-console.log(browser);
-console.log("Removed element:", removedElement);
-
-for(let i=0; i<browser.length; i++){
+for (let i = 0; i < browser.length; i++) {
     console.log(browser[i]);
-    
-    if(browser[i] === "opera"){
-        console.log("Opera is removed from browser found at index:");
+    if (browser[i] === "opera") {
+        console.log("Opera is removed from the selenium!");
     }
 }

@@ -1,14 +1,29 @@
-let arr = [1,2,3,4,5]; // Length = 5
+let arr = [1, 2, 3];
 console.log(arr);
 
-arr.push(6);    //Added 6 at the end of the array
-console.log(arr);   
-
-arr.pop();  //Added 6 and removed 6
+// Add to END
+arr.push(4);
 console.log(arr);
 
-arr.unshift(0); // Added 0 at the beginning
+// Remove from END
+arr.pop();
 console.log(arr);
 
-arr.shift(); // Remove first element
+arr.push(5, 6);
+console.log(arr);
+
+// Add to BEGINNING
+arr.unshift(0);
+console.log(arr);
+
+
+// Remove from BEGINNING
+arr.shift();
+console.log(arr);
+
+
+
+arr.unshift(100);
+console.log(arr);
+arr.shift();
 console.log(arr);

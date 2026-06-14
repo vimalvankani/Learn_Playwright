@@ -1,12 +1,14 @@
-let score = 45;
+let score = 78;
+
 if (score >= 90) {
-    console.log("Grade: A");
+    console.log("A");
 } else if (score >= 80) {
-    console.log("Grade: B");
+    console.log("B");
 } else if (score >= 70) {
-    console.log("Grade: C");
+    console.log("C");
 } else if (score >= 60) {
-    console.log("Grade: D");
+    console.log("D");
 } else {
-    console.log("Grade: F");
+    console.log("F- Fail");
+    console.log("Rewartch all videoa nd give the test again");
 }

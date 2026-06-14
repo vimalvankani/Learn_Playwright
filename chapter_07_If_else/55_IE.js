@@ -1,3 +1,4 @@
-if (true){
-    console.log("This is true");
+// Single if is allowed. 
+if (true) {
+
 }

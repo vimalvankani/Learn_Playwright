@@ -1,3 +1,9 @@
+//??
+
+console.log(null >= 0); //  null == 0 or null > 0
+console.log(null === 0);
+
+// ??  Nullish
 let amul = null;
-letmilk_required = amul ?? "Nadani Milk";
-console.log(milk_required); // Output: Nadani Milk
+let milk_required = amul ?? "nandani milk";
+console.log(milk_required);

@@ -1,9 +1,11 @@
 let username = "Harshvardhan";
-let password = "Harsh123";
+let password = "secure123";
 let isAccountLocked = true;
 
-if(username === "Harshvardhan" && password === "Harsh123" && !isAccountLocked){
+// Logical operator + if-else statement
+
+if ((username === "Harshvardhan" && password === "secure123") && isAccountLocked) {
     console.log("Allowed to enter");
-}   else{
-    console.log("Not allowed to enter");    
-}    
+} else {
+    console.log("not allwed to enter");
+}

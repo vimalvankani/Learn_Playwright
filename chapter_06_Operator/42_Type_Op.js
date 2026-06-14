@@ -1,11 +1,8 @@
-console.log(typeof "Hello, World!"); // Output: string
-console.log(typeof 31.4); // Output: number
-console.log(typeof 652.566); // Output: number
-
-console.log(typeof []); // Output: object
-console.log(typeof {}); // Output: object
-console.log(typeof null); // Output: object (this is a known quirk in JavaScript)
-console.log(typeof undefined); // Output: undefined (this is a known quirk in JavaScript)
-
-console.log(typeof true); // Output: boolean
-console.log(typeof false); // Output: boolean   
+console.log(typeof "hello");
+console.log(typeof 123); // int -> number
+console.log(typeof 31.4); // float -> number
+// typeof true
+// typeof undefined  -> undefined
+// typeof null  -> object
+// typeof [] -> object
+console.log(typeof []); // -> object
