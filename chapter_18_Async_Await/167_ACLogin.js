@@ -10,7 +10,7 @@ test('logs in with valid credentials @p0', async ({ page }) => {
         log.info('Asserting login form is hidden after login');
         await expect(page.locator('[data-test="login-button"]')).toBeHidden();
     });
-});
+}); 
 
 
 
