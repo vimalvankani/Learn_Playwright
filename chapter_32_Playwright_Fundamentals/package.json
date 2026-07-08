@@ -1,0 +1,23 @@
+{
+  "name": "chapter_32_playwright_fundamentals",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "playwright test --project=chromium",
+    "test:headed": "playwright test --headed",
+    "test:all": "playwright test",
+    "test:debug": "playwright test --debug"
+  },
+  "keywords": [],
+  "author": "Vimal Vankani",
+  "license": "MIT",
+  "type": "commonjs",
+  "devDependencies": {
+    "@playwright/test": "^1.61.1",
+    "@types/node": "^26.1.0"
+  }
+}
