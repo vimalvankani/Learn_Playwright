@@ -1,20 +1,20 @@
 # Learn Playwright
 
-This repository contains JavaScript, TypeScript, and Playwright learning examples organized by chapter.
+A hands-on learning repository covering JavaScript, TypeScript, object-oriented programming, and Playwright test automation.
 
-## Current Playwright Chapter
+## What is included
 
-The active Playwright project is in:
+- JavaScript fundamentals, from basic syntax through promises and async/await
+- Object-oriented programming: classes, encapsulation, inheritance, and polymorphism
+- TypeScript topics including interfaces, enums, generics, access modifiers, decorators, and type overrides
+- Playwright basics and a dedicated Playwright fundamentals project
+- Practice tasks, including calculator and student-details exercises
 
-```text
-chapter_32_Playwright_Fundamentals
-```
+The folders are arranged in learning order (`chapter_01_Basics` through `chapter_32_Playwright_Fundamentals`).
 
-It contains a basic Playwright test that opens the Playwright website and verifies the page title.
+## Run the Playwright fundamentals tests
 
-## Run Chapter 32 Tests
-
-From the repository root:
+The current Playwright project lives in `chapter_32_Playwright_Fundamentals` and contains a Chromium test that checks the Playwright website title.
 
 ```powershell
 cd chapter_32_Playwright_Fundamentals
@@ -22,21 +22,23 @@ npm install
 npm.cmd test
 ```
 
-The Chapter 32 Playwright config runs Chromium in headed mode, so the browser window opens when the test runs.
+The project is configured to run Chromium in headed mode, so a browser window opens during the test.
 
-## Useful Commands
+### Additional commands
 
 ```powershell
-npm.cmd test
 npm.cmd run test:headed
+npm.cmd run test:all
 npm.cmd run test:debug
 npx.cmd playwright test --list
 ```
 
-Use `npm.cmd` or `npx.cmd` on Windows PowerShell if `npm` or `npx` is blocked by script execution policy.
+On Windows PowerShell, use `npm.cmd` or `npx.cmd` if script-execution policy prevents `npm` or `npx` from running directly.
 
 ## VS Code
 
-For the Run button above Playwright tests, install the **Playwright Test for VS Code** extension.
+Install the **Playwright Test for VS Code** extension to use the Run button shown above Playwright tests. Do not use the Code Runner extension for Playwright test files; run them through the Playwright test runner instead.
 
-Do not use the Code Runner extension for Playwright test files. Code Runner starts files with `ts-node`, but Playwright tests must run through the Playwright test runner.
+## Continuous integration
+
+GitHub Actions runs the root Playwright test configuration on pushes and pull requests to `main` or `master`.
